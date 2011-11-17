@@ -1,0 +1,31 @@
+<h1>Listing bottoms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Color</th>
+    <th>Size</th>
+    <th>Brand</th>
+    <th>Category</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bottoms.each do |bottom| %>
+  <tr>
+    <td><%= bottom.name %></td>
+    <td><%= bottom.color %></td>
+    <td><%= bottom.size %></td>
+    <td><%= bottom.brand.name %></td>
+    <td><%= bottom.category %></td>
+    <td><%= link_to 'Show', bottom %></td>
+    <td><%= link_to 'Edit', edit_bottom_path(bottom) %></td>
+    <td><%= link_to 'Destroy', bottom, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bottom', new_bottom_path %>

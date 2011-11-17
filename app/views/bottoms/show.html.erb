@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @bottom.name %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @bottom.color %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @bottom.size %>
+</p>
+
+<p>
+  <b>Brand:</b>
+  <%= @bottom.brand.name %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @bottom.category %>
+</p>
+
+
+<%= link_to 'Edit', edit_bottom_path(@bottom) %> |
+<%= link_to 'Back', bottoms_path %>

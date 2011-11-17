@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @top.name %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @top.color %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @top.size %>
+</p>
+
+<p>
+  <b>Brand:</b>
+  <%= @top.brand.name %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @top.category %>
+</p>
+
+
+<%= link_to 'Edit', edit_top_path(@top) %> |
+<%= link_to 'Back', tops_path %>
